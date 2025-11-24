@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Call Widget</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- LEFT Intelligence Panel -->
+    <div id="intelligence-panel">
+      <div class="header">Intelligence Script</div>
+      <pre id="script-content">// loading agent script...</pre>
+    </div>
+
+    <!-- CENTER Dynamic Island Call UI -->
+    <div id="call-ui">
+      <div id="dynamic-island">
+        <img id="avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Blake" />
+        <div id="call-info">
+          <div id="status-text">Click to Answer</div>
+          <div id="call-timer">00:00</div>
+        </div>
+      </div>
+
+      <div id="waveform"></div>
+
+      <button id="answer-btn">Click to Answer</button>
+      <button id="end-btn" style="display:none;">End Call</button>
+    </div>
+
+    <!-- RIGHT Transcript Panel -->
+    <div id="transcript-panel">
+      <div class="header">Transcript</div>
+      <div id="transcript-content"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.min.js"></script>
+  <script src="./widget.js"></script>
+</body>
+</html>

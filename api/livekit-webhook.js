@@ -1,4 +1,4 @@
-import { RoomServiceClient, EgressApi, IngressInfo } from "@livekit/server-sdk";
+import { RoomServiceClient, EgressApi, IngressInfo } from "livekit-server-sdk";
 import WebSocket from "ws";
 
 // Load env (Vercel exposes vars automatically)
